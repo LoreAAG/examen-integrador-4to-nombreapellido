@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mi Portfolio</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="home.html">home</a>
+      
+      <button id="toggle-theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola, me llamo Lorenzo, tengo 17 años.
+      </p>
+      <p>
+        Me gusta dibujar, las matematicas, y escuchar musica y no me gusta programar en css :>.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML intermedio</li>
+        <li>CSS basico</li>
+        <li>JavaScript intermedio</li>
+        <li>p5.js intermedio</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="proyectos-lista"></div>
+
+      <form id="form-proyecto">
+        <input type="text" id="titulo" placeholder="Título del proyecto" required />
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <button type="submit">Agregar proyecto</button>
+      </form>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Podés escribirme a <a href="mailto:loren.gallardo07@gmail.com">loren.gallardo07@gmail.com</a></p>
+      <p>Mi número es <a>1291231238701 (no me acuerdo mi número)</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Lorenzo Gallardo</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
+  <script src="script.js"></script>
+  <script src="sketch.js"></script> 
+
+</body>
+</html>

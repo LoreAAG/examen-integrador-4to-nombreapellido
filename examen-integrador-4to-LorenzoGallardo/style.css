@@ -1,0 +1,91 @@
+:root {
+    --bg: #fef7e1; 
+    --text: #111111;
+    --accent: #ef8e7d; 
+    --accent-secondary: #a2d3c7; 
+    --shadow-light: rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark {
+    --bg: #300030;
+    --text: #fef7e1; 
+    --accent: #f07241; 
+    --accent-secondary: #c04848; 
+    --shadow-light: rgba(255, 255, 255, 0.1);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    background: var(--accent);
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--shadow-light);
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--shadow-light);
+    margin: 1rem 2rem;
+    transition: box-shadow 0.3s;
+  }
+  
+  section:hover {
+    box-shadow: 0 6px 12px var(--shadow-light);
+  }
+  
+  form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--accent-secondary);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    box-shadow: 0 2px 5px var(--shadow-light);
+    transition: box-shadow 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 4px 8px var(--shadow-light);
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px var(--shadow-light);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background: var(--accent-secondary);
+    box-shadow: 0 5px 10px var(--shadow-light);
+  }
+  
